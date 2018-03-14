@@ -9,19 +9,19 @@ if($res->num_rows > 0) {
 
 ?>
 <center>
-    <form>
+    <form action="update_data.php" method="post">
         <table>
             <tr>
                 <td><b>ID:</b></td>
-                <td><input type="text" value="<?php echo $row['id']?>"></td>
+                <td><input type="text" value="<?php echo $row['id']?>" name="id"></td>
             </tr>
             <tr>
                 <td><b>Name:</b></td>
-                <td><input type="text" value="<?php echo $row['name']?>"></td>
+                <td><input type="text" value="<?php echo $row['name']?>" name="stdname"></td>
             </tr>
             <tr>
                 <td><b>Email:</b></td>
-                <td><input type="email" value="<?php echo $row['email'] ?>"</td>
+                <td><input type="email" value="<?php echo $row['email'] ?>" name="email"></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Update"></td>
